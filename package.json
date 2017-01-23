@@ -1,0 +1,43 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "mustafa",
+  "license": "MIT",
+  "scripts": {
+    "lint": "standard --fix",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --progress --hot --colors",
+    "build": "cross-env NODE_ENV=production webpack --progress --colors --hide-modules"
+  },
+  "standard": {
+    "ignore": [
+      "/dist",
+      "*.config.*"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "lodash": "^4.17.4",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-google-maps": "^4.11.0",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0",
+    "redux-promise": "^0.5.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "cross-env": "^3.1.4",
+    "css-loader": "^0.26.1",
+    "postcss-loader": "^1.2.2",
+    "react-sparklines": "^1.6.0",
+    "standard": "^8.6.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
